@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sidebar-bg: #ffffff;
+  --color-sidebar-text: #333333;
+  --color-primary-blue: #5b6df8;
+  --color-gray-bg: #f5f7f9;
+  --color-orange: #ff9800;
+  --color-green: #4caf50;
+  --color-red: #ff5252;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--color-gray-bg);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}

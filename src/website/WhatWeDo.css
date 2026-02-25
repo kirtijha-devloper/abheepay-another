@@ -1,0 +1,160 @@
+/* 🌟 Container for the cards */
+.what-we-do-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* ✅ Allows wrapping on smaller screens */
+  justify-content: space-between; /* Even spacing for 4 cards */
+  gap: 0.5rem; /* Small gap between cards */
+  padding: 0 1rem;
+  /* overflow: hidden; ✅ Removes scrolling */
+}
+
+/* 🌟 Individual Card Styles */
+.what-we-do-card {
+  position: relative;
+  flex: 1 1 calc(25% - 0.5rem); /* ✅ 4 cards per row */
+  max-width: 340px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  box-shadow: inset 100px 0 50px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* 🌟 Hover Effect */
+.what-we-do-card:hover {
+  z-index: 10;
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+/* 🌟 Image Container (Front face) */
+.what-we-do-card .img-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e5e7eb;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.what-we-do-card .img-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* 🌟 Flip effect on hover */
+.what-we-do-card:hover .img-container {
+  transform: rotateY(-135deg);
+}
+
+/* 🌟 Card Details (Back face) */
+.what-we-do-card .card-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  color: #374151;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+/* 🌟 Heading inside card */
+.what-we-do-card .card-details h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #b91c1c;
+}
+
+/* 🌟 Paragraph inside card */
+.what-we-do-card .card-details p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* 🌟 Link styling */
+.what-we-do-card .card-details a {
+  color: #b91c1c;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, text-decoration 0.2s ease;
+}
+
+.what-we-do-card .card-details a:hover {
+  text-decoration: underline;
+  transform: translateX(3px);
+}
+
+/* 🌟 Responsive Design */
+
+/* For tablets — 2 cards per row */
+@media (max-width: 1024px) {
+  .what-we-do-container {
+    justify-content: center;
+  }
+
+  .what-we-do-card {
+    flex: 1 1 45%;
+    max-width: 360px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* For mobile — 1 card per row */
+@media (max-width: 768px) {
+  .what-we-do-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .what-we-do-card {
+    width: 100%; /* ✅ Increased width from 90% to 100% */
+    height: 380px;
+  }
+
+  /* ✅ Fix: Disable 3D flip effect on mobile */
+  .what-we-do-card {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .what-we-do-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .what-we-do-card .img-container {
+    transform: none !important;
+    position: relative !important;
+  }
+
+  .what-we-do-card .card-details {
+    position: relative !important;
+    background: #fff;
+  }
+}
