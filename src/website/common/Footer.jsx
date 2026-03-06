@@ -82,9 +82,9 @@ const Footer = () => {
             <ul className="space-y-2 text-sm flex flex-col gap-2">
               {[
                 { text: "Home", to: "/" },
-                { text: "About Us", to: "/" },
-                { text: "Join as Retailer", to: "/" },
-                { text: "Join as Distributor", to: "/" },
+                { text: "Refund Policy", to: "/refund-policy" },
+                { text: "Join as Retailer", to: "/join-as-retailer" },
+                { text: "Join as Distributor", to: "/join-as-distributor" },
                 { text: "Privacy Policy", to: "/privacy-policy" },
                 { text: "Terms & Conditions", to: "/term-condition" },
               ].map((item, index) => (

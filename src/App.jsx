@@ -12,6 +12,7 @@ import BlogDetails from "./website/page/blog/Blogdetails";
 import EnquiryPopup from "./website/components/Enquiryform";
 import InsurancePage from "./website/page/insurance/Insurance";
 import PrivacyPolicy from "./website/page/privacy-policy/Privacy-Policy";
+import RefundPolicy from "./website/page/refund-policy/Refund-Policy";
 import TermsConditions from "./website/page/term-condition/Terms-conditions";
 import Services from "./website/page/services/Services";
 import ServicesDetail from "./website/page/services/Servicesdetails";
@@ -62,16 +63,17 @@ const router = createBrowserRouter([
       { path: "/services", element: <Services /> },
       { path: "/services/:id", element: <ServicesDetail /> },
       { path: "/privacy-policy", element: <PrivacyPolicy /> },
+      { path: "/refund-policy", element: <RefundPolicy /> },
       { path: "/term-condition", element: <TermsConditions /> },
     ],
   },
-  
+
   // Admin Login Route (standalone) - temporarily disabled
   // {
   //   path: "/login",
   //   element: <Login />,
   // },
-  
+
   // Admin Layout Routes
   {
     path: "/admin",
