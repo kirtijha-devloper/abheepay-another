@@ -20,12 +20,12 @@ const testimonials = [
     location: "Madhya Pradesh",
     img: "https://i.pinimg.com/736x/05/34/06/05340637798692d3b7c4e75ce155f390.jpg",
   },
-  {
+  /* {
     text: `"Since I started using Abheepay for Domestic Money Transfers, my customers' trust has grown immensely. The real-time settlement and transparency are truly unmatched."`,
     name: "Mr. Aman",
     location: "Bihar",
     img: "https://i.pinimg.com/736x/84/5e/44/845e442733a81758d7e9ad42db3b410f.jpg",
-  },
+  }, */
   {
     text: `"Abheepay offers a seamless digital experience for all our financial services. From bill payments to recharges, everything is integrated perfectly into one powerful dashboard."`,
     name: "Mr. Vikram",
@@ -65,7 +65,7 @@ const Testimonial = () => {
         backgroundAttachment: "fixed",
       }}
     >
-    
+
       <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="relative w-full max-w-5xl mx-auto">
@@ -90,7 +90,7 @@ const Testimonial = () => {
           {testimonials.map((t, idx) => (
             <SwiperSlide key={idx}>
               <div className="relative bg-[#1a1a1a] text-white px-6 py-10 sm:p-8 md:p-12 rounded-sm shadow-2xl mx-2 sm:mx-4 md:mx-0">
-          
+
                 <div className="absolute -top-4 left-6 sm:left-10 bg-[#2dd4bf] p-2 sm:p-3 rounded-sm">
                   <Quote size={24} fill="white" color="white" />
                 </div>
@@ -99,7 +99,7 @@ const Testimonial = () => {
                   {t.text}
                 </p>
 
-              
+
                 <div
                   className="absolute -bottom-3 sm:-bottom-4 left-10 sm:left-16 w-0 h-0 
                   border-l-[12px] sm:border-l-[15px] border-l-transparent 
@@ -108,7 +108,7 @@ const Testimonial = () => {
                 ></div>
               </div>
 
-              
+
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-between gap-6 px-4">
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
                   <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-white overflow-hidden shadow-lg flex-shrink-0">
@@ -129,14 +129,14 @@ const Testimonial = () => {
                   </div>
                 </div>
 
-                
+
                 <div className="hidden sm:block w-0" />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-   
+
         <div className="absolute right-4 bottom-4 sm:bottom-6 flex gap-2 sm:gap-3 z-50">
           <button className="testimonial-prev bg-[#2dd4bf] text-white p-2.5 sm:p-3 rounded hover:bg-[#26b8a5] transition-colors shadow-md">
             <ArrowLeft size={20} />

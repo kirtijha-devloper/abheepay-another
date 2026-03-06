@@ -133,8 +133,7 @@
     "longDescription": "We bridge the gap in financial inclusion through Assisted Banking. This includes AEPS (Cash withdrawal, balance inquiry, mini statement), Micro ATM (mATM) services, and Domestic Money Transfer (DMT) to ensure cash accessibility anywhere.",
     "features": [
       "AEPS – Cash withdrawal, balance inquiry, mini statement",
-      "Micro ATM (mATM) services",
-      "Domestic Money Transfer (DMT)"
+      "Micro ATM (mATM) services"
     ],
     "benefits": [
       "Banking access in remote areas",
@@ -150,8 +149,7 @@
     "longDescription": "We bridge the gap in financial inclusion through Assisted Banking. This includes AEPS (Cash withdrawal, balance inquiry, mini statement), Micro ATM (mATM) services, and Domestic Money Transfer (DMT) to ensure cash accessibility anywhere.",
     "features": [
       "AEPS – Cash withdrawal, balance inquiry, mini statement",
-      "Micro ATM (mATM) services",
-      "Domestic Money Transfer (DMT)"
+      "Micro ATM (mATM) services"
     ],
     "benefits": [
       "Banking access in remote areas",
@@ -167,25 +165,7 @@
     "longDescription": "We bridge the gap in financial inclusion through Assisted Banking. This includes AEPS (Cash withdrawal, balance inquiry, mini statement), Micro ATM (mATM) services, and Domestic Money Transfer (DMT) to ensure cash accessibility anywhere.",
     "features": [
       "AEPS – Cash withdrawal, balance inquiry, mini statement",
-      "Micro ATM (mATM) services",
-      "Domestic Money Transfer (DMT)"
-    ],
-    "benefits": [
-      "Banking access in remote areas",
-      "Easy cash management for agents",
-      "Instant money transfers nationwide"
-    ]
-  },
-  {
-    "id": "domestic-money-transfer",
-    "name": " Domestic Money Transfer (DMT)",
-    "imageUrl": "/assets/image/services/dmt.png",
-    "description": "Doorstep banking and cash management services including AEPS and DMT.",
-    "longDescription": "We bridge the gap in financial inclusion through Assisted Banking. This includes AEPS (Cash withdrawal, balance inquiry, mini statement), Micro ATM (mATM) services, and Domestic Money Transfer (DMT) to ensure cash accessibility anywhere.",
-    "features": [
-      "AEPS – Cash withdrawal, balance inquiry, mini statement",
-      "Micro ATM (mATM) services",
-      "Domestic Money Transfer (DMT)"
+      "Micro ATM (mATM) services"
     ],
     "benefits": [
       "Banking access in remote areas",

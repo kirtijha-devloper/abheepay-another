@@ -56,7 +56,7 @@ const Navbar = () => {
           path: "/services/aeps-cash-withdrawal-balance-inquiry-mini-statement",
         },
         { name: "Micro ATM (mATM) services", path: "/services/micro-atm-matm-services" },
-        { name: "Domestic Money Transfer (DMT)", path: "/services/domestic-money-transfer" },
+        // { name: "Domestic Money Transfer (DMT)", path: "/services/domestic-money-transfer" },
       ],
     },
     {

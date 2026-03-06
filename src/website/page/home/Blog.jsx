@@ -40,14 +40,14 @@ const BlogSection = () => {
       img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop",
       url: "/blog/smart-cash-flow-management-for-growing-retailers"
     },
-    {
+    /* {
       id: 5,
       author: "Abheepay Team",
       date: "2025",
       title: "Domestic Money Transfer Made Simple with Digital Platforms",
       img: "https://fintekdiary.com/wp-content/uploads/2023/03/woman-looking-smartphone-screen-while-transferring-money-online-1300x731-1.jpg",
       url: "/blog/domestic-money-transfer-made-simple-with-digital-platforms"
-    },
+    }, */
     {
       id: 6,
       author: "Abheepay Team",
@@ -109,7 +109,7 @@ const BlogSection = () => {
           </div>
         </div>
 
-       
+
         <Swiper
           modules={[Autoplay, Navigation]}
           spaceBetween={25}
@@ -133,17 +133,17 @@ const BlogSection = () => {
           {blogs.map((blog) => (
             <SwiperSlide key={blog.id}>
               <div className="relative h-[420px] rounded-2xl overflow-hidden group shadow-lg cursor-pointer">
-               
+
                 <img
                   src={blog.img}
                   alt={blog.title}
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
-                
-               
+
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent"></div>
 
-               
+
                 <div className="absolute inset-0 p-7 flex flex-col justify-end">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="bg-[#2DD4BF] text-white text-[10px] px-3 py-1 rounded font-bold tracking-widest">
@@ -156,21 +156,21 @@ const BlogSection = () => {
                     {blog.title}
                   </h3>
 
-                
-                  <a 
-                    href={blog.url} 
+
+                  <a
+                    href={blog.url}
                     className="flex items-center justify-between bg-white text-[#3b4b94] px-5 py-2.5 rounded-full w-fit gap-3 font-bold text-[13px] hover:bg-[#2DD4BF] hover:text-white transition-all duration-300 group/btn shadow-md no-underline"
                   >
                     Continue Reading
-                    <svg 
-                      width="16" 
-                      height="16" 
-                      viewBox="0 0 24 24" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      strokeWidth="3" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300"
                     >
                       <line x1="7" y1="17" x2="17" y2="7"></line>

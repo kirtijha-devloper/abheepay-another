@@ -74,7 +74,7 @@ const Sidebar = () => {
               <div className="pl-11 pr-3 py-1 space-y-1 max-h-[50vh] overflow-y-auto">
                 <NavLink to="/admin/assisted-banking/aeps" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• AEPS</NavLink>
                 <NavLink to="/admin/bbps" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• BBPS</NavLink>
-                <NavLink to="/admin/assisted-banking/dmt" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• DMT</NavLink>
+                {/* <NavLink to="/admin/assisted-banking/dmt" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• DMT</NavLink> */}
                 <NavLink to="/admin/recharge" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Recharge</NavLink>
                 <NavLink to="/admin/loan" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Loan</NavLink>
                 <NavLink to="/admin/credit-card-apply" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Credit Card</NavLink>
@@ -121,27 +121,27 @@ const Sidebar = () => {
             <span className="px-3 text-xs font-bold text-gray-400 uppercase tracking-wider">SETTING</span>
           </div>
           <div>
-              <button
-                onClick={() => toggleMenu('settings')}
-                className="w-full flex items-center justify-between px-3 py-2.5 text-black font-bold rounded-md hover:bg-gray-50"
-              >
-                <div className="flex items-center">
-                  <Settings className="w-5 h-5 mr-3" />
-                  <span className="font-bold">Setting</span>
-                </div>
-                {openMenus.settings ? <ChevronDown className="w-4 h-4 text-gray-400" /> : <ChevronRight className="w-4 h-4 text-gray-400" />}
-              </button>
-              {openMenus.settings && (
-                <div className="pl-11 pr-3 py-1 space-y-1">
-                  <NavLink to="/admin/setting/commission-plan" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Commission Plan</NavLink>
-                  <NavLink to="/admin/setting/profile" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Profile</NavLink>
-                  <NavLink to="/admin/setting/tpin" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• TPIN</NavLink>
-                  <NavLink to="/admin/setting/change-password" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Change Password</NavLink>
-                  <NavLink to="/admin/setting/certificate-download" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Certificate Download</NavLink>
-                  <NavLink to="/admin/setting/download-device-driver" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Download Device Driver</NavLink>
-                </div>
-              )}
-           </div>
+            <button
+              onClick={() => toggleMenu('settings')}
+              className="w-full flex items-center justify-between px-3 py-2.5 text-black font-bold rounded-md hover:bg-gray-50"
+            >
+              <div className="flex items-center">
+                <Settings className="w-5 h-5 mr-3" />
+                <span className="font-bold">Setting</span>
+              </div>
+              {openMenus.settings ? <ChevronDown className="w-4 h-4 text-gray-400" /> : <ChevronRight className="w-4 h-4 text-gray-400" />}
+            </button>
+            {openMenus.settings && (
+              <div className="pl-11 pr-3 py-1 space-y-1">
+                <NavLink to="/admin/setting/commission-plan" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Commission Plan</NavLink>
+                <NavLink to="/admin/setting/profile" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Profile</NavLink>
+                <NavLink to="/admin/setting/tpin" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• TPIN</NavLink>
+                <NavLink to="/admin/setting/change-password" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Change Password</NavLink>
+                <NavLink to="/admin/setting/certificate-download" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Certificate Download</NavLink>
+                <NavLink to="/admin/setting/download-device-driver" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Download Device Driver</NavLink>
+              </div>
+            )}
+          </div>
 
         </nav>
       </div>

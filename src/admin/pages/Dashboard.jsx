@@ -12,15 +12,15 @@ import {
   Pie,
   Cell
 } from 'recharts';
-import { 
-  FaFingerprint, 
-  FaMobileAlt, 
-  FaWallet, 
-  FaFileInvoiceDollar, 
-  FaIdCard, 
-  FaCreditCard, 
-  FaUniversity, 
-  FaChartLine, 
+import {
+  FaFingerprint,
+  FaMobileAlt,
+  FaWallet,
+  FaFileInvoiceDollar,
+  FaIdCard,
+  FaCreditCard,
+  FaUniversity,
+  FaChartLine,
   FaHandHoldingUsd,
   FaUserShield,
   FaMoneyBillWave
@@ -32,8 +32,8 @@ const COLORS = ['#FF6B6B', '#4DABF7', '#FCC419', '#868E96', '#40C057', '#FA5252'
 
 const servicesData = [
   { id: 1, title: 'AEPS', icon: <span className="text-3xl font-bold text-gray-700 italic">A<span className="text-green-500">P</span>S<span className="text-orange-500 text-sm">)</span></span>, borderColor: 'border-purple-800', borderHover: 'hover:border-purple-600' },
-  { id: 2, title: 'D M T S1', icon: <MdMobileFriendly className="text-4xl text-blue-500" />, borderColor: 'border-blue-500', borderHover: 'hover:border-blue-400' },
-  { id: 3, title: 'D M T S2', icon: <FaMobileAlt className="text-4xl text-blue-400" />, borderColor: 'border-blue-400', borderHover: 'hover:border-blue-300' },
+  // { id: 2, title: 'D M T S1', icon: <MdMobileFriendly className="text-4xl text-blue-500" />, borderColor: 'border-blue-500', borderHover: 'hover:border-blue-400' },
+  // { id: 3, title: 'D M T S2', icon: <FaMobileAlt className="text-4xl text-blue-400" />, borderColor: 'border-blue-400', borderHover: 'hover:border-blue-300' },
   { id: 4, title: 'PayOut', icon: <FaWallet className="text-4xl text-gray-800" />, borderColor: 'border-indigo-900', borderHover: 'hover:border-indigo-700' },
   { id: 5, title: 'Bill Payment', icon: <FaFileInvoiceDollar className="text-4xl text-gray-500" />, borderColor: 'border-red-600', borderHover: 'hover:border-red-500' },
   { id: 6, title: 'PAN', icon: <FaIdCard className="text-4xl text-indigo-800" />, borderColor: 'border-purple-800', borderHover: 'hover:border-purple-600' },
@@ -56,7 +56,7 @@ const Dashboard = () => {
   if (!hasDownlines) {
     return (
       <div className="bg-[#151923] min-h-screen p-4 md:p-6 text-gray-200 overflow-y-auto font-sans">
-        
+
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 space-y-4 md:space-y-0">
           <div>
@@ -82,7 +82,7 @@ const Dashboard = () => {
               <p className="text-xs text-gray-400 mb-6 w-2/3 leading-relaxed">
                 You have 5 new messages and 2 new notifications.
               </p>
-              
+
               <div className="flex items-center space-x-6">
                 <div>
                   <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mb-1">TODAY'S SALES</p>
@@ -100,193 +100,193 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Mock Illustration in BG */}
             <div className="absolute right-0 bottom-4 w-40 h-32 pointer-events-none flex justify-end items-end pr-4">
-               {/* Abstract people illustration mockup matching the vibe */}
-               <svg viewBox="0 0 100 100" className="w-full h-full text-blue-500">
-                  <path d="M70,40 Q90,20 100,50 L80,90 Z" fill="currentColor" opacity="0.1"/>
-                  <circle cx="60" cy="30" r="12" fill="#3b82f6" />
-                  <path d="M40,60 L60,80 L80,60" stroke="#3b82f6" strokeWidth="6" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                  <circle cx="85" cy="45" r="5" fill="#ef4444" />
-                  <rect x="75" y="70" width="15" height="30" fill="#cbd5e1" rx="4"/>
-               </svg>
+              {/* Abstract people illustration mockup matching the vibe */}
+              <svg viewBox="0 0 100 100" className="w-full h-full text-blue-500">
+                <path d="M70,40 Q90,20 100,50 L80,90 Z" fill="currentColor" opacity="0.1" />
+                <circle cx="60" cy="30" r="12" fill="#3b82f6" />
+                <path d="M40,60 L60,80 L80,60" stroke="#3b82f6" strokeWidth="6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="85" cy="45" r="5" fill="#ef4444" />
+                <rect x="75" y="70" width="15" height="30" fill="#cbd5e1" rx="4" />
+              </svg>
             </div>
           </div>
 
           {/* Main Balance / Total Users */}
           <div className="bg-[#202532] rounded-xl p-6 border border-[#2a3042] flex flex-col justify-between h-[220px]">
-             <div>
-                <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mb-2">MAIN BALANCE (USERS)</p>
-                <div className="flex items-baseline mb-2">
-                   <h3 className="text-2xl font-bold text-white">₹309.50</h3>
-                   <span className="text-green-500 text-xs font-bold ml-2">2% ↗</span>
-                </div>
-                <p className="text-xs text-gray-500">24,635 users increased from last month</p>
-             </div>
-             
-             {/* Small line chart mockup */}
-             <div className="h-16 w-full flex items-end justify-between mt-4">
-                 <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="w-full h-full stroke-blue-500 fill-none" strokeWidth="1.5">
-                    <path d="M0,25 Q10,10 20,20 T40,15 T60,25 T80,5 T100,10" />
-                 </svg>
-             </div>
+            <div>
+              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mb-2">MAIN BALANCE (USERS)</p>
+              <div className="flex items-baseline mb-2">
+                <h3 className="text-2xl font-bold text-white">₹309.50</h3>
+                <span className="text-green-500 text-xs font-bold ml-2">2% ↗</span>
+              </div>
+              <p className="text-xs text-gray-500">24,635 users increased from last month</p>
+            </div>
+
+            {/* Small line chart mockup */}
+            <div className="h-16 w-full flex items-end justify-between mt-4">
+              <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="w-full h-full stroke-blue-500 fill-none" strokeWidth="1.5">
+                <path d="M0,25 Q10,10 20,20 T40,15 T60,25 T80,5 T100,10" />
+              </svg>
+            </div>
           </div>
 
           {/* AePS Balance / Active Users */}
           <div className="bg-[#202532] rounded-xl p-6 border border-[#2a3042] flex flex-col items-center justify-between h-[220px] relative">
-             <div className="w-full flex justify-between items-start">
-                <div>
-                   <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mb-1">AePS BALANCE</p>
-                   <div className="flex items-baseline mb-2">
-                      <h3 className="text-xl font-bold text-white">₹0.00</h3>
-                      <span className="text-red-500 text-xs font-bold ml-2">-1% ↘</span>
-                   </div>
+            <div className="w-full flex justify-between items-start">
+              <div>
+                <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mb-1">AePS BALANCE</p>
+                <div className="flex items-baseline mb-2">
+                  <h3 className="text-xl font-bold text-white">₹0.00</h3>
+                  <span className="text-red-500 text-xs font-bold ml-2">-1% ↘</span>
                 </div>
-             </div>
-             
-             {/* Donut Chart Mockup */}
-             <div className="relative w-28 h-28 flex items-center justify-center mt-2 mb-2">
-                <svg viewBox="0 0 36 36" className="w-full h-full transform -rotate-90">
-                   <path
-                     className="text-[#2a3042]"
-                     d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                     fill="none"
-                     stroke="currentColor"
-                     strokeWidth="4"
-                   />
-                   <path
-                     className="text-blue-500"
-                     strokeDasharray="78, 100"
-                     d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                     fill="none"
-                     stroke="currentColor"
-                     strokeWidth="4"
-                     strokeLinecap="round"
-                   />
-                </svg>
-                <div className="absolute text-center">
-                   <span className="text-xl font-bold text-white">78%</span>
-                </div>
-             </div>
+              </div>
+            </div>
+
+            {/* Donut Chart Mockup */}
+            <div className="relative w-28 h-28 flex items-center justify-center mt-2 mb-2">
+              <svg viewBox="0 0 36 36" className="w-full h-full transform -rotate-90">
+                <path
+                  className="text-[#2a3042]"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                />
+                <path
+                  className="text-blue-500"
+                  strokeDasharray="78, 100"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                />
+              </svg>
+              <div className="absolute text-center">
+                <span className="text-xl font-bold text-white">78%</span>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Mock Medium Cards Row */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-           {/* Card 1 */}
-           <div className="bg-[#202532] rounded-xl p-5 border border-[#2a3042]">
-              <div className="flex justify-between items-center mb-3">
-                 <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">SALES</p>
-                 <select className="bg-transparent text-xs text-gray-400 outline-none"><option>Last 7 days</option></select>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4">75%</h3>
-              <div className="flex justify-between text-xs text-gray-400 mb-2">
-                 <span>Conversion rate</span>
-                 <span className="text-green-500">7% ↗</span>
-              </div>
-              <div className="w-full bg-[#2a3042] h-1 mt-2 rounded-full overflow-hidden">
-                <div className="bg-blue-500 h-full" style={{width: '75%'}}></div>
-              </div>
-           </div>
+          {/* Card 1 */}
+          <div className="bg-[#202532] rounded-xl p-5 border border-[#2a3042]">
+            <div className="flex justify-between items-center mb-3">
+              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">SALES</p>
+              <select className="bg-transparent text-xs text-gray-400 outline-none"><option>Last 7 days</option></select>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-4">75%</h3>
+            <div className="flex justify-between text-xs text-gray-400 mb-2">
+              <span>Conversion rate</span>
+              <span className="text-green-500">7% ↗</span>
+            </div>
+            <div className="w-full bg-[#2a3042] h-1 mt-2 rounded-full overflow-hidden">
+              <div className="bg-blue-500 h-full" style={{ width: '75%' }}></div>
+            </div>
+          </div>
 
-           {/* Card 2 */}
-           <div className="bg-[#202532] rounded-xl p-5 border border-[#2a3042]">
-              <div className="flex justify-between items-center mb-3">
-                 <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">REVENUE</p>
-                 <select className="bg-transparent text-xs text-gray-400 outline-none"><option>Last 7 days</option></select>
-              </div>
-              <div className="flex items-baseline mb-4">
-                 <h3 className="text-xl font-bold text-white">$4,300</h3>
-                 <span className="text-green-500 text-xs font-bold ml-2">8% ↗</span>
-              </div>
-              <div className="h-10 w-full flex items-end mt-4">
-                 <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="w-full h-full stroke-blue-500 fill-none" strokeWidth="2">
-                    <polyline points="0,30 10,25 20,28 30,15 40,20 50,5 60,18 70,10 80,15 90,5 100,10" />
-                 </svg>
-              </div>
-           </div>
+          {/* Card 2 */}
+          <div className="bg-[#202532] rounded-xl p-5 border border-[#2a3042]">
+            <div className="flex justify-between items-center mb-3">
+              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">REVENUE</p>
+              <select className="bg-transparent text-xs text-gray-400 outline-none"><option>Last 7 days</option></select>
+            </div>
+            <div className="flex items-baseline mb-4">
+              <h3 className="text-xl font-bold text-white">$4,300</h3>
+              <span className="text-green-500 text-xs font-bold ml-2">8% ↗</span>
+            </div>
+            <div className="h-10 w-full flex items-end mt-4">
+              <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="w-full h-full stroke-blue-500 fill-none" strokeWidth="2">
+                <polyline points="0,30 10,25 20,28 30,15 40,20 50,5 60,18 70,10 80,15 90,5 100,10" />
+              </svg>
+            </div>
+          </div>
 
-           {/* Card 3 */}
-           <div className="bg-[#202532] rounded-xl p-5 border border-[#2a3042]">
-              <div className="flex justify-between items-center mb-3">
-                 <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">NEW CLIENTS</p>
-                 <select className="bg-transparent text-xs text-gray-400 outline-none"><option>Last 7 days</option></select>
-              </div>
-              <div className="flex items-baseline mb-4">
-                 <h3 className="text-xl font-bold text-white">6,782</h3>
-                 <span className="text-yellow-500 text-xs font-bold ml-2">0% -</span>
-              </div>
-              <div className="h-10 w-full flex items-end mt-4">
-                 <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="w-full h-full stroke-blue-500 fill-none" strokeWidth="2">
-                    <polyline points="0,25 10,20 20,28 30,10 40,15 50,2 60,18 70,8 80,18 90,0 100,12" />
-                 </svg>
-              </div>
-           </div>
+          {/* Card 3 */}
+          <div className="bg-[#202532] rounded-xl p-5 border border-[#2a3042]">
+            <div className="flex justify-between items-center mb-3">
+              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">NEW CLIENTS</p>
+              <select className="bg-transparent text-xs text-gray-400 outline-none"><option>Last 7 days</option></select>
+            </div>
+            <div className="flex items-baseline mb-4">
+              <h3 className="text-xl font-bold text-white">6,782</h3>
+              <span className="text-yellow-500 text-xs font-bold ml-2">0% -</span>
+            </div>
+            <div className="h-10 w-full flex items-end mt-4">
+              <svg viewBox="0 0 100 30" preserveAspectRatio="none" className="w-full h-full stroke-blue-500 fill-none" strokeWidth="2">
+                <polyline points="0,25 10,20 20,28 30,10 40,15 50,2 60,18 70,8 80,18 90,0 100,12" />
+              </svg>
+            </div>
+          </div>
 
-           {/* Card 4 */}
-           <div className="bg-[#202532] rounded-xl p-5 border border-[#2a3042]">
-              <div className="flex justify-between items-center mb-3">
-                 <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">ACTIVE SUBSCRIPTIONS</p>
-                 <select className="bg-transparent text-xs text-gray-400 outline-none"><option>Last 7 days</option></select>
-              </div>
-              <div className="flex items-baseline mb-4">
-                 <h3 className="text-xl font-bold text-white">2,986</h3>
-                 <span className="text-green-500 text-xs font-bold ml-2">4% ↗</span>
-              </div>
-              <div className="h-10 w-full flex items-end justify-between space-x-[2px] mt-4">
-                 {[5, 4, 6, 8, 3, 5, 4, 7, 9, 6, 8, 5, 4, 6, 8, 3, 5, 4, 7, 9, 6, 5, 8, 4, 6, 7].map((h, i) => (
-                    <div key={i} className="w-full bg-blue-500 rounded-sm" style={{height: `${h*10}%`}}></div>
-                 ))}
-              </div>
-           </div>
+          {/* Card 4 */}
+          <div className="bg-[#202532] rounded-xl p-5 border border-[#2a3042]">
+            <div className="flex justify-between items-center mb-3">
+              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">ACTIVE SUBSCRIPTIONS</p>
+              <select className="bg-transparent text-xs text-gray-400 outline-none"><option>Last 7 days</option></select>
+            </div>
+            <div className="flex items-baseline mb-4">
+              <h3 className="text-xl font-bold text-white">2,986</h3>
+              <span className="text-green-500 text-xs font-bold ml-2">4% ↗</span>
+            </div>
+            <div className="h-10 w-full flex items-end justify-between space-x-[2px] mt-4">
+              {[5, 4, 6, 8, 3, 5, 4, 7, 9, 6, 8, 5, 4, 6, 8, 3, 5, 4, 7, 9, 6, 5, 8, 4, 6, 7].map((h, i) => (
+                <div key={i} className="w-full bg-blue-500 rounded-sm" style={{ height: `${h * 10}%` }}></div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Small Action Cards Row */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-           {/* Small Box 1 */}
-           <div className="bg-[#202532] rounded-xl p-4 border border-[#2a3042] flex items-center">
-              <div className="w-10 h-10 rounded-md bg-blue-500 flex items-center justify-center text-white mr-4 shrink-0 shadow-lg shadow-blue-500/20">
-                 <FaFileInvoiceDollar size={18} />
-              </div>
-              <div>
-                 <p className="text-gray-200 text-sm font-bold">132 Sales</p>
-                 <p className="text-gray-500 text-[10px]">12 waiting payments</p>
-              </div>
-           </div>
-           
-           {/* Small Box 2 */}
-           <div className="bg-[#202532] rounded-xl p-4 border border-[#2a3042] flex items-center">
-              <div className="w-10 h-10 rounded-md bg-green-500 flex items-center justify-center text-white mr-4 shrink-0 shadow-lg shadow-green-500/20">
-                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-              </div>
-              <div>
-                 <p className="text-gray-200 text-sm font-bold">78 Orders</p>
-                 <p className="text-gray-500 text-[10px]">32 shipped</p>
-              </div>
-           </div>
+          {/* Small Box 1 */}
+          <div className="bg-[#202532] rounded-xl p-4 border border-[#2a3042] flex items-center">
+            <div className="w-10 h-10 rounded-md bg-blue-500 flex items-center justify-center text-white mr-4 shrink-0 shadow-lg shadow-blue-500/20">
+              <FaFileInvoiceDollar size={18} />
+            </div>
+            <div>
+              <p className="text-gray-200 text-sm font-bold">132 Sales</p>
+              <p className="text-gray-500 text-[10px]">12 waiting payments</p>
+            </div>
+          </div>
 
-           {/* Small Box 3 */}
-           <div className="bg-[#202532] rounded-xl p-4 border border-[#2a3042] flex items-center">
-              <div className="w-10 h-10 rounded-md bg-[#181d28] border border-gray-700 flex items-center justify-center text-white mr-4 shrink-0">
-                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              </div>
-              <div>
-                 <p className="text-gray-200 text-sm font-bold">623 Shares</p>
-                 <p className="text-gray-500 text-[10px]">16 today</p>
-              </div>
-           </div>
+          {/* Small Box 2 */}
+          <div className="bg-[#202532] rounded-xl p-4 border border-[#2a3042] flex items-center">
+            <div className="w-10 h-10 rounded-md bg-green-500 flex items-center justify-center text-white mr-4 shrink-0 shadow-lg shadow-green-500/20">
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            </div>
+            <div>
+              <p className="text-gray-200 text-sm font-bold">78 Orders</p>
+              <p className="text-gray-500 text-[10px]">32 shipped</p>
+            </div>
+          </div>
 
-           {/* Small Box 4 */}
-           <div className="bg-[#202532] rounded-xl p-4 border border-[#2a3042] flex items-center">
-              <div className="w-10 h-10 rounded-md bg-blue-500 flex items-center justify-center text-white mr-4 shrink-0 shadow-lg shadow-blue-500/20">
-                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-              </div>
-              <div>
-                 <p className="text-gray-200 text-sm font-bold">132 Likes</p>
-                 <p className="text-gray-500 text-[10px]">21 today</p>
-              </div>
-           </div>
+          {/* Small Box 3 */}
+          <div className="bg-[#202532] rounded-xl p-4 border border-[#2a3042] flex items-center">
+            <div className="w-10 h-10 rounded-md bg-[#181d28] border border-gray-700 flex items-center justify-center text-white mr-4 shrink-0">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+            </div>
+            <div>
+              <p className="text-gray-200 text-sm font-bold">623 Shares</p>
+              <p className="text-gray-500 text-[10px]">16 today</p>
+            </div>
+          </div>
+
+          {/* Small Box 4 */}
+          <div className="bg-[#202532] rounded-xl p-4 border border-[#2a3042] flex items-center">
+            <div className="w-10 h-10 rounded-md bg-blue-500 flex items-center justify-center text-white mr-4 shrink-0 shadow-lg shadow-blue-500/20">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
+            </div>
+            <div>
+              <p className="text-gray-200 text-sm font-bold">132 Likes</p>
+              <p className="text-gray-500 text-[10px]">21 today</p>
+            </div>
+          </div>
         </div>
 
         {/* Services in Dark Theme Grid */}
@@ -331,14 +331,14 @@ const Dashboard = () => {
               <p className="text-gray-500 text-sm mt-1">Today Volume: 0</p>
             </div>
 
-            {/* DMT Card */}
+            {/* DMT Card 
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center">
               <div className="w-16 h-16 rounded-full border-2 border-indigo-600 flex items-center justify-center mb-4 bg-indigo-50">
                 <div className="text-xl text-yellow-500">💸</div>
               </div>
               <h2 className="text-lg font-bold text-gray-800">DMT</h2>
               <p className="text-gray-500 text-sm mt-1">Today Volume: 0</p>
-            </div>
+            </div> */}
 
             {/* Wallet Enquiry Card */}
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center">
@@ -415,7 +415,7 @@ const Dashboard = () => {
             <div className="grid grid-cols-2 gap-y-2 gap-x-1 text-[10px] text-gray-500 mb-4">
               <div className="flex items-center"><span className="w-4 h-2 bg-[#FF6B6B] mr-1"></span>AEPS</div>
               <div className="flex items-center"><span className="w-4 h-2 bg-[#4DABF7] mr-1"></span>Payout</div>
-              <div className="flex items-center"><span className="w-4 h-2 bg-[#FCC419] mr-1"></span>DMT</div>
+              {/* <div className="flex items-center"><span className="w-4 h-2 bg-[#FCC419] mr-1"></span>DMT</div> */}
               <div className="flex items-center"><span className="w-4 h-2 bg-[#868E96] mr-1"></span>Recharge</div>
               <div className="flex items-center"><span className="w-4 h-2 bg-[#8b5cf6] mr-1"></span>BBPS</div>
             </div>

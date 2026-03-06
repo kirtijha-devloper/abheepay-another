@@ -67,13 +67,13 @@ const Whatwedo = () => {
       image: "https://www.smplraj.in/Content/front/services/Micro%20ATM.png",
       link: "/services/micro-atm-matm-services",
     },
-    {
+    /* {
       id: 10,
       title: "Domestic Money Transfer (DMT)",
       image:
         "https://i.pinimg.com/736x/80/8a/29/808a2962331deef5a5e681abf03270da.jpg",
       link: "/services/domestic-money-transfer",
-    },
+    }, */
     {
       id: 11,
       title: "BBPS, Recharge & Bill Payments",
@@ -240,7 +240,7 @@ const Whatwedo = () => {
   return (
     <section className="py-6 bg-white font-sans">
       <div className="container mx-auto px-6 md:px-32 text-center relative">
-     
+
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             What we do?
@@ -248,7 +248,7 @@ const Whatwedo = () => {
           <div className="w-12 h-0.5 bg-[#2dd4bf] mx-auto"></div>
         </div>
 
-        
+
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -313,12 +313,12 @@ const Whatwedo = () => {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-[#2dd4bf]/90 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
-                    
+
                       <h3 className="text-white text-xs md:text-base font-normal mb-3 leading-tight transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
                         {service.title}
                       </h3>
 
-                    
+
                       <a
                         href={service.link}
                         className="bg-white text-[#2dd4bf] px-2 py-0.5 rounded-full text-[10px] md:text-sm whitespace-nowrap shadow-lg hover:bg-gray-100 transition-colors"
@@ -335,7 +335,7 @@ const Whatwedo = () => {
             ))}
           </Swiper>
 
-        
+
           <div className="custom-nav">
             <div className="nav-btn btn-prev">
               <svg

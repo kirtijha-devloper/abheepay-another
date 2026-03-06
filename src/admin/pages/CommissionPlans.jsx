@@ -61,7 +61,7 @@ const CommissionPlans = () => {
             <select className="w-full border border-gray-200 rounded px-3 py-2.5 text-gray-500 font-normal focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white">
               <option>--Select a Service--</option>
               <option>AEPS</option>
-              <option>DMT</option>
+              {/* <option>DMT</option> */}
             </select>
           </div>
 

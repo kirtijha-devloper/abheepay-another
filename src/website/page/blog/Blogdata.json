@@ -20,11 +20,23 @@
       "Simple claim assistance"
     ],
     "highlights": [
-      { "title": "Risk Protection", "desc": "Financial safety during emergencies." },
-      { "title": "Digital Access", "desc": "Easy online policy management." },
-      { "title": "Future Ready", "desc": "Long-term family security." }
+      {
+        "title": "Risk Protection",
+        "desc": "Financial safety during emergencies."
+      },
+      {
+        "title": "Digital Access",
+        "desc": "Easy online policy management."
+      },
+      {
+        "title": "Future Ready",
+        "desc": "Long-term family security."
+      }
     ],
-    "related": [1, 2]
+    "related": [
+      1,
+      2
+    ]
   },
   {
     "id": "why-digital-credit-card-bill-payments-are-safer-than-cash",
@@ -47,11 +59,23 @@
       "24/7 payment availability"
     ],
     "highlights": [
-      { "title": "Security", "desc": "Encrypted digital transactions." },
-      { "title": "Speed", "desc": "Instant payment confirmation." },
-      { "title": "Convenience", "desc": "Pay anytime, anywhere." }
+      {
+        "title": "Security",
+        "desc": "Encrypted digital transactions."
+      },
+      {
+        "title": "Speed",
+        "desc": "Instant payment confirmation."
+      },
+      {
+        "title": "Convenience",
+        "desc": "Pay anytime, anywhere."
+      }
     ],
-    "related": [0, 3]
+    "related": [
+      0,
+      3
+    ]
   },
   {
     "id": "digital-banking-solutions-empowering-small-businesses",
@@ -74,11 +98,23 @@
       "Improved transaction transparency"
     ],
     "highlights": [
-      { "title": "Efficiency", "desc": "Faster daily banking operations." },
-      { "title": "Accessibility", "desc": "Banking from any location." },
-      { "title": "Growth Support", "desc": "Better financial control." }
+      {
+        "title": "Efficiency",
+        "desc": "Faster daily banking operations."
+      },
+      {
+        "title": "Accessibility",
+        "desc": "Banking from any location."
+      },
+      {
+        "title": "Growth Support",
+        "desc": "Better financial control."
+      }
     ],
-    "related": [1, 4]
+    "related": [
+      1,
+      4
+    ]
   },
   {
     "id": "smart-cash-flow-management-for-growing-retailers",
@@ -101,38 +137,23 @@
       "Better financial planning"
     ],
     "highlights": [
-      { "title": "Control", "desc": "Clear view of cash movement." },
-      { "title": "Stability", "desc": "Improved financial health." },
-      { "title": "Scalability", "desc": "Prepared for business growth." }
+      {
+        "title": "Control",
+        "desc": "Clear view of cash movement."
+      },
+      {
+        "title": "Stability",
+        "desc": "Improved financial health."
+      },
+      {
+        "title": "Scalability",
+        "desc": "Prepared for business growth."
+      }
     ],
-    "related": [2, 5]
-  },
-  {
-    "id": "domestic-money-transfer-made-simple-with-digital-platforms",
-    "img": "https://fintekdiary.com/wp-content/uploads/2023/03/woman-looking-smartphone-screen-while-transferring-money-online-1300x731-1.jpg",
-    "tag": "MONEY TRANSFER",
-    "title": "Domestic Money Transfer Made Simple with Digital Platforms",
-    "author": "Abheepay Team",
-    "date": "2025",
-    "time": "2 min read",
-    "comments": 2,
-    "content": [
-      "Domestic money transfer services allow instant fund movement across banks.",
-      "They eliminate long queues and reduce dependency on traditional banking hours.",
-      "Secure digital platforms ensure reliable transfers even in remote areas."
-    ],
-    "whyChoose": [
-      "Instant fund transfer",
-      "Nationwide coverage",
-      "Low transaction charges",
-      "High reliability"
-    ],
-    "highlights": [
-      { "title": "Speed", "desc": "Immediate credit to beneficiary." },
-      { "title": "Reach", "desc": "Service across urban and rural areas." },
-      { "title": "Trust", "desc": "Secure banking networks." }
-    ],
-    "related": [3, 6]
+    "related": [
+      2,
+      5
+    ]
   },
   {
     "id": "utility-bill-payments-a-convenient-digital-experience",
@@ -155,11 +176,23 @@
       "Increased footfall for retailers"
     ],
     "highlights": [
-      { "title": "Ease", "desc": "One platform for all bills." },
-      { "title": "Reliability", "desc": "Confirmed payments instantly." },
-      { "title": "Customer Value", "desc": "Convenient service experience." }
+      {
+        "title": "Ease",
+        "desc": "One platform for all bills."
+      },
+      {
+        "title": "Reliability",
+        "desc": "Confirmed payments instantly."
+      },
+      {
+        "title": "Customer Value",
+        "desc": "Convenient service experience."
+      }
     ],
-    "related": [4, 7]
+    "related": [
+      4,
+      7
+    ]
   },
   {
     "id": "how-digital-loan-services-help-businesses-scale-faster",
@@ -182,11 +215,23 @@
       "Transparent process"
     ],
     "highlights": [
-      { "title": "Speed", "desc": "Faster access to funds." },
-      { "title": "Flexibility", "desc": "Business-friendly repayment plans." },
-      { "title": "Growth", "desc": "Support for expansion plans." }
+      {
+        "title": "Speed",
+        "desc": "Faster access to funds."
+      },
+      {
+        "title": "Flexibility",
+        "desc": "Business-friendly repayment plans."
+      },
+      {
+        "title": "Growth",
+        "desc": "Support for expansion plans."
+      }
     ],
-    "related": [5, 7]
+    "related": [
+      5,
+      7
+    ]
   },
   {
     "id": "how-digital-financial-services-increase-retail-store-footfall",
@@ -209,10 +254,22 @@
       "Stronger brand trust"
     ],
     "highlights": [
-      { "title": "Footfall", "desc": "More customers daily." },
-      { "title": "Revenue", "desc": "Extra earning opportunities." },
-      { "title": "Trust", "desc": "Reliable digital services." }
+      {
+        "title": "Footfall",
+        "desc": "More customers daily."
+      },
+      {
+        "title": "Revenue",
+        "desc": "Extra earning opportunities."
+      },
+      {
+        "title": "Trust",
+        "desc": "Reliable digital services."
+      }
     ],
-    "related": [6, 0]
+    "related": [
+      6,
+      0
+    ]
   }
 ]

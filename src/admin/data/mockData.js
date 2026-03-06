@@ -118,7 +118,7 @@ export const allMembersStatsData = [
 
 export const dashboardTopCardsData = [
   { title: "AEPS", value: "₹ 550.00", icon: "Activity", color: "text-blue-500", bgColor: "bg-blue-50" },
-  { title: "DMT", value: "₹ 0.00", icon: "CreditCard", color: "text-purple-500", bgColor: "bg-purple-50" },
+  // { title: "DMT", value: "₹ 0.00", icon: "CreditCard", color: "text-purple-500", bgColor: "bg-purple-50" },
   { title: "WALLET ENQUIRY", value: "₹ 113.80", icon: "Wallet", color: "text-green-500", bgColor: "bg-green-50" }
 ];
 
@@ -141,7 +141,7 @@ export const dashboardChartData = [
 export const dashboardPieData = [
   { name: 'AEPS', value: 550, color: '#3b82f6' },
   { name: 'Payout', value: 0, color: '#10b981' },
-  { name: 'DMT', value: 0, color: '#f59e0b' },
+  // { name: 'DMT', value: 0, color: '#f59e0b' },
   { name: 'Recharge', value: 0, color: '#ef4444' },
   { name: 'BBPS', value: 0, color: '#8b5cf6' },
 ];
