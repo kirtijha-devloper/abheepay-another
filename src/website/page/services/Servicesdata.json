@@ -762,28 +762,5 @@
       "Scalable platforms for business growth",
       "Secure, compliant & reliable software systems"
     ]
-  },
-  {
-    "id": "app-development",
-    "name": "App Development",
-    "imageUrl": "/assets/image/services/app_dev.png",
-    "description": "Custom mobile application development services designed to deliver seamless user experiences and scalable performance.",
-    "longDescription": "Our App Development services focus on building high-quality, secure, and user-friendly mobile applications tailored to your business needs. From Android and iOS apps to cross-platform solutions, we develop performance-driven applications that enhance customer engagement, streamline operations, and support long-term business growth.",
-    "features": [
-      "Android & iOS app development",
-      "Cross-platform app solutions",
-      "Custom UI/UX design for mobile apps",
-      "Backend & API integration",
-      "Secure authentication & data protection",
-      "Performance optimization & scalability",
-      "App maintenance, updates & long-term support"
-    ],
-    "benefits": [
-      "Improved customer engagement & retention",
-      "Mobile-first solutions for modern users",
-      "Scalable apps that grow with your business",
-      "Secure & high-performance applications",
-      "Faster development with expert support"
-    ]
   }
 ]
