@@ -48,86 +48,100 @@ const Sidebar = () => {
       <div className="flex-1 overflow-y-auto py-4">
         <nav className="px-3 space-y-1">
 
-          <NavLink to="/admin" end className={({ isActive }) => `flex items-center px-3 py-2.5 font-semibold rounded-md ${isActive ? 'bg-gray-100 text-blue-600' : 'text-gray-700 hover:bg-gray-50'}`}>
+          <NavLink to="/admin" end className={({ isActive }) => `flex items-center px-3 py-2.5 font-bold rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-black hover:bg-gray-50'}`}>
             <Home className="w-5 h-5 mr-3" />
-            Dashboard
+            Home
           </NavLink>
 
-          {/* User Menu - Only for DISTRIBUTOR and above */}
-          {canManageUsers && (
-            <div>
-              <button
-                onClick={() => toggleMenu('user')}
-                className="w-full flex items-center justify-between px-3 py-2.5 text-gray-700 font-medium rounded-md hover:bg-gray-50"
-              >
-                <div className="flex items-center">
-                  <User className="w-5 h-5 mr-3" />
-                  <span className="font-semibold">User Mgt</span>
-                </div>
-                {openMenus.user ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
-              </button>
-              {openMenus.user && (
-                <div className="pl-11 pr-3 py-1 space-y-1">
-                  <NavLink to="/admin/add-member" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}>• Add Member</NavLink>
-                  <NavLink to="/admin/all-members" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}>• All Members</NavLink>
-                  <NavLink to="/admin/kyc-requested" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}>• KYC Requested</NavLink>
-                </div>
-              )}
-            </div>
-          )}
-
-          <NavLink to="/admin/fund-requests" className={({ isActive }) => `flex items-center px-3 py-2.5 font-medium rounded-md ${isActive ? 'bg-gray-100 text-blue-600' : 'text-gray-700 hover:bg-gray-50'}`}>
+          <NavLink to="/admin/fund-request" className={({ isActive }) => `flex items-center px-3 py-2.5 font-bold rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-black hover:bg-gray-50'}`}>
             <CreditCard className="w-5 h-5 mr-3" />
-            <span className="font-semibold">Fund Requests</span>
+            Fund Request
           </NavLink>
 
-          {/* Commission Plans - Usually Admin/SD/MD level */}
-          {userRole !== 'RETAILER' && (
-            <NavLink to="/admin/commission-plans" className={({ isActive }) => `flex items-center px-3 py-2.5 font-medium rounded-md ${isActive ? 'bg-gray-100 text-blue-600' : 'text-gray-700 hover:bg-gray-50'}`}>
-              <PieChart className="w-5 h-5 mr-3" />
-              <span className="font-semibold">Commission Plans</span>
-            </NavLink>
-          )}
-
-          {/* Reports Menu */}
+          {/* Services Menu */}
           <div>
             <button
-              onClick={() => toggleMenu('reports')}
-              className="w-full flex items-center justify-between px-3 py-2.5 text-gray-700 font-medium rounded-md hover:bg-gray-50"
+              onClick={() => toggleMenu('services')}
+              className="w-full flex items-center justify-between px-3 py-2.5 text-black font-bold rounded-md hover:bg-gray-50"
             >
               <div className="flex items-center">
-                <FileText className="w-5 h-5 mr-3" />
-                <span className="font-semibold">Reports</span>
+                <Briefcase className="w-5 h-5 mr-3 text-blue-500" />
+                <span className="font-bold">Services</span>
               </div>
-              {openMenus.reports ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
+              {openMenus.services ? <ChevronDown className="w-4 h-4 text-gray-400" /> : <ChevronRight className="w-4 h-4 text-gray-400" />}
             </button>
-            {openMenus.reports && (
-              <div className="pl-11 pr-3 py-1 space-y-1">
-                <NavLink to="/admin/ledger" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}>• Ledger</NavLink>
-                <NavLink to="/admin/fund-transfer" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}>• Fund History</NavLink>
-                <NavLink to="/admin/pg-add-fund" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}>• PG Fund History</NavLink>
-                <NavLink to="/admin/payout-history" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}>• PayOut History</NavLink>
-                <NavLink to="/admin/aeps-statement" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}>• AEPS Statement</NavLink>
-                <NavLink to="/admin/dmt-report" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}>• DMT Report</NavLink>
+            {openMenus.services && (
+              <div className="pl-11 pr-3 py-1 space-y-1 max-h-[50vh] overflow-y-auto">
+                <NavLink to="/admin/assisted-banking/aeps" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• AEPS</NavLink>
+                <NavLink to="/admin/bbps" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• BBPS</NavLink>
+                <NavLink to="/admin/assisted-banking/dmt" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• DMT</NavLink>
+                <NavLink to="/admin/recharge" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Recharge</NavLink>
+                <NavLink to="/admin/loan" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Loan</NavLink>
+                <NavLink to="/admin/credit-card-apply" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Credit Card</NavLink>
+                <NavLink to="/admin/bbps/credit-card" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Credit Card Bill Pay</NavLink>
+                <NavLink to="/admin/payout" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Payout</NavLink>
+                <NavLink to="/admin/assisted-banking/matm" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• mATM</NavLink>
+                <NavLink to="/admin/bank-account-open" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Bank Account Open</NavLink>
+                <NavLink to="/admin/nsdl-pan" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• PAN Apply</NavLink>
+                <NavLink to="/admin/ppi-wallet" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• PPI Wallet</NavLink>
+                <NavLink to="/admin/travel-booking" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Travel Booking</NavLink>
               </div>
             )}
           </div>
 
-          {/* Settings Menu - Admin Only */}
-          {isAdmin && (
-            <div>
+          {/* Reports Menu */}
+          <div className="pt-4 pb-2">
+            <span className="px-3 text-xs font-bold text-gray-400 uppercase tracking-wider">REPORT</span>
+          </div>
+          <div>
+            <button
+              onClick={() => toggleMenu('reports')}
+              className="w-full flex items-center justify-between px-3 py-2.5 text-black font-bold rounded-md hover:bg-gray-50"
+            >
+              <div className="flex items-center">
+                <FileText className="w-5 h-5 mr-3" />
+                <span className="font-bold">Report</span>
+              </div>
+              {openMenus.reports ? <ChevronDown className="w-4 h-4 text-gray-400" /> : <ChevronRight className="w-4 h-4 text-gray-400" />}
+            </button>
+            {openMenus.reports && (
+              <div className="pl-11 pr-3 py-1 space-y-1">
+                <NavLink to="/admin/report/ledger" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Ledger Statement</NavLink>
+                <NavLink to="/admin/report/add-fund-pg" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Add Fund PG Report</NavLink>
+                <NavLink to="/admin/report/aeps-history" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Aeps History</NavLink>
+                <NavLink to="/admin/report/money-transfer-history" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Money Transfer History</NavLink>
+                <NavLink to="/admin/report/bbps-history" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• BBPS History</NavLink>
+                <NavLink to="/admin/report/payout-history" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Payout History</NavLink>
+                <NavLink to="/admin/report/old-txn-history" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Old TXN History (before 10-10-2025)</NavLink>
+              </div>
+            )}
+          </div>
+
+          <div className="pt-4 pb-2">
+            <span className="px-3 text-xs font-bold text-gray-400 uppercase tracking-wider">SETTING</span>
+          </div>
+          <div>
               <button
                 onClick={() => toggleMenu('settings')}
-                className="w-full flex items-center justify-between px-3 py-2.5 text-gray-700 font-medium rounded-md hover:bg-gray-50"
+                className="w-full flex items-center justify-between px-3 py-2.5 text-black font-bold rounded-md hover:bg-gray-50"
               >
                 <div className="flex items-center">
-                  <Briefcase className="w-5 h-5 mr-3" />
-                  <span className="font-semibold">Settings</span>
+                  <Settings className="w-5 h-5 mr-3" />
+                  <span className="font-bold">Setting</span>
                 </div>
-                {openMenus.settings ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
+                {openMenus.settings ? <ChevronDown className="w-4 h-4 text-gray-400" /> : <ChevronRight className="w-4 h-4 text-gray-400" />}
               </button>
-            </div>
-          )}
+              {openMenus.settings && (
+                <div className="pl-11 pr-3 py-1 space-y-1">
+                  <NavLink to="/admin/setting/commission-plan" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Commission Plan</NavLink>
+                  <NavLink to="/admin/setting/profile" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Profile</NavLink>
+                  <NavLink to="/admin/setting/tpin" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• TPIN</NavLink>
+                  <NavLink to="/admin/setting/change-password" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Change Password</NavLink>
+                  <NavLink to="/admin/setting/certificate-download" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Certificate Download</NavLink>
+                  <NavLink to="/admin/setting/download-device-driver" className={({ isActive }) => `block px-3 py-2 text-sm font-medium rounded-md ${isActive ? 'bg-gray-100 text-black' : 'text-gray-600 hover:bg-gray-50'}`}>• Download Device Driver</NavLink>
+                </div>
+              )}
+           </div>
 
         </nav>
       </div>

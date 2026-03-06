@@ -8,72 +8,72 @@
     {
       name: "Axis Bank",
       role: "Banking Partner",
-      img: "public/assets/image/partner/Axis-Bank.png",
+      img: "/assets/image/partner/Axis-Bank.png",
     },
     {
       name: "HDFC",
       role: "Banking Partner",
-      img: "public/assets/image/partner/hdfc.webp",
+      img: "/assets/image/partner/hdfc.webp",
     },
     {
       name: "Pine Labs",
       role: "Payment Solutions",
-      img: "public/assets/image/partner/Pine_Labs.jpg",
+      img: "/assets/image/partner/Pine_Labs.jpg",
     },
     {
       name: "Razorpay",
       role: "Payment Gateway",
-      img: "public/assets/image/partner/Razorpay.webp",
+      img: "/assets/image/partner/Razorpay.webp",
     },
     {
       name: "Instant Mudra",
       role: "Loan Partner",
-      img: "public/assets/image/partner/Instant-Mudra.jpg",
+      img: "/assets/image/partner/Instant-Mudra.jpg",
     },
     {
       name: "Dogma",
       role: "Fintech Partner",
-      img: "public/assets/image/partner/dogma.png",
+      img: "/assets/image/partner/dogma.png",
     },
     {
-      name: "yebank",
+      name: "yesbank",
       role: "Fintech Partner",
-      img: "public/assets/image/partner/yesbank.avif",
+      img: "/assets/image/partner/yesbank.avif",
     },
     {
       name: "cashfree",
       role: "Fintech Partner",
-      img: "public/assets/image/partner/cashfree.png",
+      img: "/assets/image/partner/cashfree.png",
     },  
     {
       name: "paytm",
       role: "Fintech Partner",
-      img: "public/assets/image/partner/Paytm.png",
+      img: "/assets/image/partner/Paytm.png",
     },  
     {
       name: "branchx",
       role: "Fintech Partner",
-      img: "public/assets/image/partner/branchx.jpg",
+      img: "/assets/image/partner/branchx.jpg",
     },  
     {
       name: "bill avenue",
       role: "Fintech Partner",
-      img: "public/assets/image/partner/bill-avenue.jpg",
+      img: "/assets/image/partner/bill-avenue.jpg",
     },  
     {
       name: "digitap",
       role: "Fintech Partner",
-      img: "public/assets/image/partner/digitap.png",
+      img: "/assets/image/partner/digitap.png",
     },  
     {
       name: "instantpay",
       role: "Fintech Partner",
-      img: "public/assets/image/partner/instantpay.jpeg",
+      img: "/assets/image/partner/instantpay.jpeg",
     },  
     {
       name: "paysprint",
       role: "Fintech Partner",
-      img: "public/assets/image/partner/paysprint.jpeg",
+      img: "/assets/image/partner/paysprint.jpeg",
     },  
   ];
 

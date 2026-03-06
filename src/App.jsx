@@ -25,7 +25,13 @@ import AddUser from './admin/pages/AddUser';
 import AllMembers from './admin/pages/AllMembers';
 import KycRequested from './admin/pages/KycRequested';
 import CommissionPlans from './admin/pages/CommissionPlans';
-import Login from './admin/pages/Login';
+import FundRequest from './admin/pages/FundRequest';
+import Aeps from './admin/pages/Aeps';
+import MoneyTransfer from './admin/pages/MoneyTransfer';
+import CreditCardBill from './admin/pages/CreditCardBill';
+import BankVerification from './admin/pages/BankVerification';
+import NsdlPanApply from './admin/pages/NsdlPanApply';
+import CreditCardApply from './admin/pages/CreditCardApply';
 
 const WebsiteLayout = () => {
   return (
@@ -60,11 +66,11 @@ const router = createBrowserRouter([
     ],
   },
   
-  // Admin Login Route (standalone)
-  {
-    path: "/login",
-    element: <Login />,
-  },
+  // Admin Login Route (standalone) - temporarily disabled
+  // {
+  //   path: "/login",
+  //   element: <Login />,
+  // },
   
   // Admin Layout Routes
   {
@@ -76,6 +82,13 @@ const router = createBrowserRouter([
       { path: "all-members", element: <AllMembers /> },
       { path: "kyc-requested", element: <KycRequested /> },
       { path: "commission-plans", element: <CommissionPlans /> },
+      { path: "fund-request", element: <FundRequest /> },
+      { path: "assisted-banking/aeps", element: <Aeps /> },
+      { path: "assisted-banking/dmt", element: <MoneyTransfer /> },
+      { path: "bbps/credit-card", element: <CreditCardBill /> },
+      { path: "bank-verification", element: <BankVerification /> },
+      { path: "nsdl-pan", element: <NsdlPanApply /> },
+      { path: "credit-card-apply", element: <CreditCardApply /> },
     ],
   },
 ]);

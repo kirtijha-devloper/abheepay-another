@@ -355,9 +355,10 @@ const Navbar = () => {
             <Link to="/contact" className="relative text-sm font-semibold tracking-wide hover:text-[#00D3CD]">
               CONTACT US
             </Link>
-            <Link to="/login" className="relative text-sm font-semibold tracking-wide hover:text-[#00D3CD]">
+            {/* LOGIN temporarily disabled */}
+            {/* <Link to="/login" className="relative text-sm font-semibold tracking-wide hover:text-[#00D3CD]">
               LOGIN
-            </Link>
+            </Link> */}
           </nav>
 
           <div className="flex items-center gap-2">

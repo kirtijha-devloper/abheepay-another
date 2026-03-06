@@ -2,7 +2,7 @@
   {
     "id": "digital-payment-solutions",
     "name": "Digital Payment Solutions",
-    "imageUrl": "https://i.pinimg.com/1200x/2d/41/5a/2d415a58f19653d1695ff90b82a684e1.jpg",
+    "imageUrl": "/assets/image/services/payment_gateway.png",
     "description": "Comprehensive online payment gateway and smart routing solutions.",
     "longDescription": "Our Digital Payment Solutions offer a robust Online Payment Gateway supporting UPI, Cards, Net Banking, and Wallets. We provide POS & Android POS Devices along with QR-Based Contactless Payments. The system features smart routing with high success rates, real-time monitoring, and a PCI-DSS compliant architecture to ensure maximum security.",
     "features": [
@@ -23,7 +23,7 @@
   {
     "id": "online-payment-gateway–upi-cards-net-banking-wallets",
     "name": "Online Payment Gateway – UPI, Cards, Net Banking, Wallets",
-    "imageUrl": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-04/04/full/1712210336-0132.jpg",
+    "imageUrl": "/assets/image/services/payment_gateway.png",
     "description": "Comprehensive online payment gateway and smart routing solutions.",
     "longDescription": "Our Digital Payment Solutions offer a robust Online Payment Gateway supporting UPI, Cards, Net Banking, and Wallets. We provide POS & Android POS Devices along with QR-Based Contactless Payments. The system features smart routing with high success rates, real-time monitoring, and a PCI-DSS compliant architecture to ensure maximum security.",
     "features": [
@@ -44,7 +44,7 @@
   {
     "id": "pos-devices",
     "name": "POS  Devices",
-    "imageUrl": "https://i.pinimg.com/1200x/3f/53/40/3f534029a8d3c5b3ca0f9adf77251de4.jpg",
+    "imageUrl": "/assets/image/services/android_pos.png",
     "description": "Comprehensive online payment gateway and smart routing solutions.",
     "longDescription": "Our Digital Payment Solutions offer a robust Online Payment Gateway supporting UPI, Cards, Net Banking, and Wallets. We provide POS & Android POS Devices along with QR-Based Contactless Payments. The system features smart routing with high success rates, real-time monitoring, and a PCI-DSS compliant architecture to ensure maximum security.",
     "features": [
@@ -65,7 +65,7 @@
   {
     "id": "qr-based-contactless-payments",
     "name": " QR-Based Contactless Payments",
-    "imageUrl": "https://zindigi.pk/wp-content/uploads/2025/01/QR-Payments-1024x835.webp",
+    "imageUrl": "/assets/image/services/static_qr.png",
     "description": "Comprehensive online payment gateway and smart routing solutions.",
     "longDescription": "Our Digital Payment Solutions offer a robust Online Payment Gateway supporting UPI, Cards, Net Banking, and Wallets. We provide POS & Android POS Devices along with QR-Based Contactless Payments. The system features smart routing with high success rates, real-time monitoring, and a PCI-DSS compliant architecture to ensure maximum security.",
     "features": [
@@ -86,7 +86,7 @@
   {
     "id": "Smart-routing-with-high-success-rates",
     "name": "Smart Routing With High Success Rates",
-    "imageUrl": "https://i.pinimg.com/1200x/94/8a/45/948a4513d3456e1ee8d62dc433bfca94.jpg",
+    "imageUrl": "/assets/image/services/smart_routing.png",
     "description": "Comprehensive online payment gateway and smart routing solutions.",
     "longDescription": "Our Digital Payment Solutions offer a robust Online Payment Gateway supporting UPI, Cards, Net Banking, and Wallets. We provide POS & Android POS Devices along with QR-Based Contactless Payments. The system features smart routing with high success rates, real-time monitoring, and a PCI-DSS compliant architecture to ensure maximum security.",
     "features": [
@@ -107,7 +107,7 @@
   {
     "id": "real-time-monitoring-and-pci-dss-compliant-architecture",
     "name": "Real-time Monitoring And PCI-DSS Compliant Architecture",
-    "imageUrl": "public/assets/image/services/Real-time-Monitoring-And-PCI-DSS.jpg",
+    "imageUrl": "/assets/image/services/real_monitoring.png",
     "description": "Comprehensive online payment gateway and smart routing solutions.",
     "longDescription": "Our Digital Payment Solutions offer a robust Online Payment Gateway supporting UPI, Cards, Net Banking, and Wallets. We provide POS & Android POS Devices along with QR-Based Contactless Payments. The system features smart routing with high success rates, real-time monitoring, and a PCI-DSS compliant architecture to ensure maximum security.",
     "features": [
@@ -128,7 +128,7 @@
   {
     "id": "assisted-banking-cash-management",
     "name": "Assisted Banking & Cash Management",
-    "imageUrl": "https://i.pinimg.com/736x/97/f7/15/97f715e910a20e722598d48a4972b809.jpg",
+    "imageUrl": "/assets/image/services/banking_apis.png",
     "description": "Doorstep banking and cash management services including AEPS and DMT.",
     "longDescription": "We bridge the gap in financial inclusion through Assisted Banking. This includes AEPS (Cash withdrawal, balance inquiry, mini statement), Micro ATM (mATM) services, and Domestic Money Transfer (DMT) to ensure cash accessibility anywhere.",
     "features": [
@@ -145,7 +145,7 @@
   {
     "id": "aeps-cash-withdrawal-balance-inquiry-mini-statement",
     "name": "AEPS – Cash Withdrawal, Balance Inquiry, Mini Statement",
-    "imageUrl": "https://i.pinimg.com/736x/e8/ad/fe/e8adfe418e1f720928148674b8d23b9b.jpg",
+    "imageUrl": "/assets/image/services/aeps.png",
     "description": "Doorstep banking and cash management services including AEPS and DMT.",
     "longDescription": "We bridge the gap in financial inclusion through Assisted Banking. This includes AEPS (Cash withdrawal, balance inquiry, mini statement), Micro ATM (mATM) services, and Domestic Money Transfer (DMT) to ensure cash accessibility anywhere.",
     "features": [
@@ -162,7 +162,7 @@
   {
     "id": "micro-atm-matm-services",
     "name": " Micro ATM (mATM) services",
-    "imageUrl": "https://i.pinimg.com/736x/f5/96/df/f596df5d5536c0c1b478086f97064185.jpg",
+    "imageUrl": "/assets/image/services/micro_atm.png",
     "description": "Doorstep banking and cash management services including AEPS and DMT.",
     "longDescription": "We bridge the gap in financial inclusion through Assisted Banking. This includes AEPS (Cash withdrawal, balance inquiry, mini statement), Micro ATM (mATM) services, and Domestic Money Transfer (DMT) to ensure cash accessibility anywhere.",
     "features": [
@@ -179,7 +179,7 @@
   {
     "id": "domestic-money-transfer",
     "name": " Domestic Money Transfer (DMT)",
-    "imageUrl": "https://i.pinimg.com/736x/80/8a/29/808a2962331deef5a5e681abf03270da.jpg",
+    "imageUrl": "/assets/image/services/dmt.png",
     "description": "Doorstep banking and cash management services including AEPS and DMT.",
     "longDescription": "We bridge the gap in financial inclusion through Assisted Banking. This includes AEPS (Cash withdrawal, balance inquiry, mini statement), Micro ATM (mATM) services, and Domestic Money Transfer (DMT) to ensure cash accessibility anywhere.",
     "features": [
@@ -196,7 +196,7 @@
   {
     "id": "bbps-recharge-bill-payments",
     "name": "BBPS, Recharge & Bill Payments",
-    "imageUrl": "https://i.pinimg.com/736x/e5/ea/8d/e5ea8d14df26832c4dd6acc36c1bc758.jpg",
+    "imageUrl": "/assets/image/services/bbps_bill_payment.png",
     "description": "One-stop solution for all utility bills and mobile recharges.",
     "longDescription": "Our platform supports the Bharat Bill Payment System (BBPS) for utility bill payments including electricity, gas, water, and FASTag. We also provide Mobile, DTH, data card recharges, and Credit card bill payments.",
     "features": [
@@ -213,7 +213,7 @@
   {
     "id": "utility-bill-payments-electricity-gas-water-fastag",
     "name": "Utility bill payments – electricity, gas, water, FASTag",
-    "imageUrl": "https://i.pinimg.com/1200x/b8/13/67/b81367cdb9fb9c48c12ec0ff636b7477.jpg",
+    "imageUrl": "/assets/image/services/bbps_bill_payment.png",
     "description": "One-stop solution for all utility bills and mobile recharges.",
     "longDescription": "Our platform supports the Bharat Bill Payment System (BBPS) for utility bill payments including electricity, gas, water, and FASTag. We also provide Mobile, DTH, data card recharges, and Credit card bill payments.",
     "features": [
@@ -230,7 +230,7 @@
   {
     "id": "mobile-dth-data-card-recharges",
     "name": "Mobile, DTH & data card recharges",
-    "imageUrl": "https://i.pinimg.com/736x/2c/5a/65/2c5a65b1f8eb48bfe96f4fa408e0eb6a.jpg",
+    "imageUrl": "/assets/image/services/mobile_recharge.png",
     "description": "One-stop solution for all utility bills and mobile recharges.",
     "longDescription": "Our platform supports the Bharat Bill Payment System (BBPS) for utility bill payments including electricity, gas, water, and FASTag. We also provide Mobile, DTH, data card recharges, and Credit card bill payments.",
     "features": [
@@ -247,7 +247,7 @@
   {
     "id": "credit-card-bill-payments",
     "name": "Credit card bill payments",
-    "imageUrl": "https://i.pinimg.com/1200x/bf/65/af/bf65af58dff266620fff7a4efbef71a0.jpg",
+    "imageUrl": "/assets/image/services/credit_card_bill.png",
     "description": "One-stop solution for all utility bills and mobile recharges.",
     "longDescription": "Our platform supports the Bharat Bill Payment System (BBPS) for utility bill payments including electricity, gas, water, and FASTag. We also provide Mobile, DTH, data card recharges, and Credit card bill payments.",
     "features": [
@@ -264,7 +264,7 @@
   {
     "id": "lending-credit-solutions",
     "name": "Lending & Credit Solutions",
-    "imageUrl": "https://i.pinimg.com/1200x/0e/b4/9f/0eb49fd14f200b7b0b887e12e1b3dbfc.jpg",
+    "imageUrl": "/assets/image/services/personal_loan.png",
     "description": "Business and personal loans with seamless digital onboarding.",
     "longDescription": "We offer specialized lending solutions including Business loans & working capital finance, Personal loans with digital onboarding, and comprehensive Credit card sourcing and lifecycle support.",
     "features": [
@@ -281,7 +281,7 @@
   {
     "id": "business-loans-working-capital-finance",
     "name": "Business loans & working capital finance",
-    "imageUrl": "https://i.pinimg.com/736x/4a/c8/8a/4ac88a04b4c466e16f8aa077a38ac027.jpg",
+    "imageUrl": "/assets/image/services/business_loan.png",
     "description": "Business and personal loans with seamless digital onboarding.",
     "longDescription": "We offer specialized lending solutions including Business loans & working capital finance, Personal loans with digital onboarding, and comprehensive Credit card sourcing and lifecycle support.",
     "features": [
@@ -298,7 +298,7 @@
   {
     "id": "personal-loans-with-digital-onboarding",
     "name": "Personal loans with digital onboarding",
-    "imageUrl": "https://www.trueid.in/wp-content/uploads/2025/01/boarding-4.webp",
+    "imageUrl": "/assets/image/services/personal_loan.png",
     "description": "Business and personal loans with seamless digital onboarding.",
     "longDescription": "We offer specialized lending solutions including Business loans & working capital finance, Personal loans with digital onboarding, and comprehensive Credit card sourcing and lifecycle support.",
     "features": [
@@ -315,7 +315,7 @@
   {
     "id": "credit-card-sourcing-and-lifecycle-support",
     "name": " Credit card sourcing and lifecycle support",
-    "imageUrl": "https://www.thestreet.com/.image/w_3840,q_auto:good,c_limit/NDA6MDAwMDAyODAyODYy/23-12.jpg?arena_f_auto",
+    "imageUrl": "/assets/image/services/credit_card_apply.png",
     "description": "Business and personal loans with seamless digital onboarding.",
     "longDescription": "We offer specialized lending solutions including Business loans & working capital finance, Personal loans with digital onboarding, and comprehensive Credit card sourcing and lifecycle support.",
     "features": [
@@ -332,10 +332,14 @@
   {
     "id": "insurance-solutions",
     "name": "Insurance Solutions",
-    "imageUrl": "https://i.pinimg.com/736x/8a/8c/ce/8a8cce1ec915a096d3946f1391c2242d.jpg",
+    "imageUrl": "/assets/image/services/insurance_general.png",
     "description": "Extensive insurance coverage for health, life, and travel.",
     "longDescription": "Our insurance portfolio covers Health insurance, Life insurance, and General & travel insurance to provide a safety net for all unforeseen circumstances.",
-    "features": ["Health insurance", "Life insurance", "General & travel insurance"],
+    "features": [
+      "Health insurance",
+      "Life insurance",
+      "General & travel insurance"
+    ],
     "benefits": [
       "Comprehensive risk coverage",
       "Affordable premium plans",
@@ -345,10 +349,14 @@
   {
     "id": "health-insurance",
     "name": " Health insurance",
-    "imageUrl": "https://i.pinimg.com/1200x/c5/a2/28/c5a2281103b9cd7dacc39edad6d9ba69.jpg",
+    "imageUrl": "/assets/image/services/health_insurance.png",
     "description": "Extensive insurance coverage for health, life, and travel.",
     "longDescription": "Our insurance portfolio covers Health insurance, Life insurance, and General & travel insurance to provide a safety net for all unforeseen circumstances.",
-    "features": ["Health insurance", "Life insurance", "General & travel insurance"],
+    "features": [
+      "Health insurance",
+      "Life insurance",
+      "General & travel insurance"
+    ],
     "benefits": [
       "Comprehensive risk coverage",
       "Affordable premium plans",
@@ -358,10 +366,14 @@
   {
     "id": "life-insurance",
     "name": " Life insurance",
-    "imageUrl": "https://i.pinimg.com/1200x/14/8b/d3/148bd351bbfdda9677329340b58a69d9.jpg",
+    "imageUrl": "/assets/image/services/life_insurance.png",
     "description": "Extensive insurance coverage for health, life, and travel.",
     "longDescription": "Our insurance portfolio covers Health insurance, Life insurance, and General & travel insurance to provide a safety net for all unforeseen circumstances.",
-    "features": ["Health insurance", "Life insurance", "General & travel insurance"],
+    "features": [
+      "Health insurance",
+      "Life insurance",
+      "General & travel insurance"
+    ],
     "benefits": [
       "Comprehensive risk coverage",
       "Affordable premium plans",
@@ -371,10 +383,14 @@
   {
     "id": "general-travel-insurance",
     "name": "General & travel insurance",
-    "imageUrl": "https://i.pinimg.com/1200x/23/21/b1/2321b1cbf50bf48c5c96f391c96338be.jpg",
+    "imageUrl": "/assets/image/services/travel_insurance.png",
     "description": "Extensive insurance coverage for health, life, and travel.",
     "longDescription": "Our insurance portfolio covers Health insurance, Life insurance, and General & travel insurance to provide a safety net for all unforeseen circumstances.",
-    "features": ["Health insurance", "Life insurance", "General & travel insurance"],
+    "features": [
+      "Health insurance",
+      "Life insurance",
+      "General & travel insurance"
+    ],
     "benefits": [
       "Comprehensive risk coverage",
       "Affordable premium plans",
@@ -384,7 +400,7 @@
   {
     "id": "travel-apis-travel-services",
     "name": "Travel APIs & Travel Services",
-    "imageUrl": "https://www.technoheaven.com/Theme/img/Travel-API-Provider.jpg",
+    "imageUrl": "/assets/image/services/travel_apis.png",
     "description": "Complete travel booking engine for flights, hotels, and buses.",
     "longDescription": "Our travel suite includes Flight booking (Domestic & International), Bus ticket booking, and Hotel booking. We also offer Travel insurance integration and a lucrative Commission-based travel service model.",
     "features": [
@@ -403,7 +419,7 @@
   {
     "id": "flight-booking-domestic-international",
     "name": "Flight booking domestic international",
-    "imageUrl": "public/assets/image/services/flight.jpeg",
+    "imageUrl": "/assets/image/services/flight_booking.png",
     "description": "Complete travel booking engine for flights, hotels, and buses.",
     "longDescription": "Our travel suite includes Flight booking (Domestic & International), Bus ticket booking, and Hotel booking. We also offer Travel insurance integration and a lucrative Commission-based travel service model.",
     "features": [
@@ -422,7 +438,7 @@
   {
     "id": "bus-ticket-booking",
     "name": "Bus ticket booking",
-    "imageUrl": "public/assets/image/services/bus.png",
+    "imageUrl": "/assets/image/services/bus_booking.png",
     "description": "A complete digital solution for booking bus tickets across multiple routes and operators.",
     "longDescription": "Our Bus Ticket Booking solution provides a seamless platform to book bus tickets across local, intercity, and interstate routes. It supports multiple bus operators, real-time seat availability, route selection, secure online payments, and instant ticket confirmation, making travel booking fast, reliable, and convenient.",
     "features": [
@@ -443,7 +459,7 @@
   {
     "id": "train-ticket-booking",
     "name": "Train ticket booking",
-    "imageUrl": "public/assets/image/services/train.jpeg",
+    "imageUrl": "/assets/image/services/train_booking.png",
     "description": "A reliable digital platform for booking train tickets with real-time availability.",
     "longDescription": "Our Train Ticket Booking solution enables users to book train tickets easily across multiple routes with real-time seat availability, fare details, and secure online payments. The system supports fast booking, instant confirmation, and a commission-based model, making it ideal for travel agencies and digital service providers.",
     "features": [
@@ -464,7 +480,7 @@
   {
     "id": "hotel-booking",
     "name": "Hotel booking",
-    "imageUrl": "public/assets/image/services/hotel.jpeg",
+    "imageUrl": "/assets/image/services/hotel_booking.png",
     "description": "An online platform to search, compare, and book hotels with ease.",
     "longDescription": "Our Hotel Booking solution allows users to explore and book hotels across cities with real-time availability, room details, pricing, and secure online payments. It supports budget hotels, premium stays, and business accommodations, along with a commission-based model to help partners generate additional revenue.",
     "features": [
@@ -485,7 +501,7 @@
   {
     "id": "travel-insurance-integration",
     "name": "Travel insurance integration",
-    "imageUrl": "https://i.pinimg.com/1200x/b6/92/13/b69213176d5d55de9ae081fad14ca93d.jpg",
+    "imageUrl": "/assets/image/services/travel_insurance.png",
     "description": "Integrated travel insurance solution to protect travelers against unforeseen risks.",
     "longDescription": "Our Travel Insurance Integration enables seamless inclusion of insurance plans during travel bookings. It covers trip cancellations, medical emergencies, baggage loss, and travel delays. The solution supports multiple insurance providers, digital policy issuance, and a commission-based model for travel partners.",
     "features": [
@@ -506,7 +522,7 @@
   {
     "id": "holiday-packages",
     "name": "Holiday packages",
-    "imageUrl": "public/assets/image/services/holiday.jpeg",
+    "imageUrl": "/assets/image/services/holiday_packages.png",
     "description": "Curated holiday packages offering complete travel experiences for individuals and families.",
     "longDescription": "Our Holiday Packages solution provides end-to-end travel experiences including destination planning, accommodation, transportation, sightseeing, and optional travel insurance. Designed for both domestic and international destinations, these packages are customizable and ideal for travel agents looking to earn commissions while delivering memorable journeys to customers.",
     "features": [
@@ -527,7 +543,7 @@
   {
     "id": "commission-based-travel-services",
     "name": " Commission-based travel services",
-    "imageUrl": "public/assets/image/services/Commission-based-travel.jpg",
+    "imageUrl": "/assets/image/services/holiday_packages.png",
     "description": "A commission-driven travel service platform to earn on every booking.",
     "longDescription": "Our Commission-Based Travel Services model enables partners and agents to earn commissions by offering travel bookings such as flights, buses, hotels, and travel insurance. The platform provides real-time inventory access, secure transactions, automated commission tracking, and transparent settlement, making it a profitable and scalable travel business solution.",
     "features": [
@@ -548,7 +564,7 @@
   {
     "id": "technology-api-services",
     "name": "Technology & API Services",
-    "imageUrl": "https://i.pinimg.com/1200x/b9/c8/20/b9c8203be90998839a1e2321ea17422f.jpg",
+    "imageUrl": "/assets/image/services/banking_apis.png",
     "description": "White-label platforms and robust API integrations for fintech.",
     "longDescription": "We provide the backbone for fintech businesses with Payment, banking, travel & wallet APIs. Our tech stack includes Settlement & reconciliation systems, Merchant/Distributor/Admin dashboards, and White-label fintech & travel platforms.",
     "features": [
@@ -566,7 +582,7 @@
   {
     "id": "payment-banking-travel-wallet-apis",
     "name": " Payment, banking, travel & wallet APIs",
-    "imageUrl": "https://i.pinimg.com/1200x/e7/24/0b/e7240bf085d8f9317a1d11ffaf0c5faf.jpg",
+    "imageUrl": "/assets/image/services/banking_apis.png",
     "description": "White-label platforms and robust API integrations for fintech.",
     "longDescription": "We provide the backbone for fintech businesses with Payment, banking, travel & wallet APIs. Our tech stack includes Settlement & reconciliation systems, Merchant/Distributor/Admin dashboards, and White-label fintech & travel platforms.",
     "features": [
@@ -584,7 +600,7 @@
   {
     "id": "settlement-reconciliation-systems",
     "name": "Settlement & reconciliation systems",
-    "imageUrl": "https://media.licdn.com/dms/image/v2/D4D12AQFdLZstkA93fg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1737655217693?e=2147483647&v=beta&t=A3PO24Va6IHCD4NK05gKBWWqn7aYuxgenX_RtoMj5BQ",
+    "imageUrl": "/assets/image/services/settlement.png",
     "description": "White-label platforms and robust API integrations for fintech.",
     "longDescription": "We provide the backbone for fintech businesses with Payment, banking, travel & wallet APIs. Our tech stack includes Settlement & reconciliation systems, Merchant/Distributor/Admin dashboards, and White-label fintech & travel platforms.",
     "features": [
@@ -602,7 +618,7 @@
   {
     "id": "Merchant-distributor-admin-dashboards",
     "name": " Merchant, distributor & admin dashboards",
-    "imageUrl": "public/assets/image/services/Merchant-distributor-admin-dashboards.jpg",
+    "imageUrl": "/assets/image/services/merchant_dashboards.png",
     "description": "White-label platforms and robust API integrations for fintech.",
     "longDescription": "We provide the backbone for fintech businesses with Payment, banking, travel & wallet APIs. Our tech stack includes Settlement & reconciliation systems, Merchant/Distributor/Admin dashboards, and White-label fintech & travel platforms.",
     "features": [
@@ -620,7 +636,7 @@
   {
     "id": "white-label-fintech-travel-platforms",
     "name": "White-label fintech & travel platforms",
-    "imageUrl": "public/assets/image/services/White-label-fintech-travel-platforms.jpg",
+    "imageUrl": "/assets/image/services/white_label_platforms.png",
     "description": "White-label platforms and robust API integrations for fintech.",
     "longDescription": "We provide the backbone for fintech businesses with Payment, banking, travel & wallet APIs. Our tech stack includes Settlement & reconciliation systems, Merchant/Distributor/Admin dashboards, and White-label fintech & travel platforms.",
     "features": [
@@ -638,7 +654,7 @@
   {
     "id": "web-infrastructure-maintenance",
     "name": "Web Infrastructure & Maintenance",
-    "imageUrl": "https://i.pinimg.com/736x/42/ad/a2/42ada2d79c2343c64bde534f5ed67c19.jpg",
+    "imageUrl": "/assets/image/services/software_dev.png",
     "description": "Secure, scalable and high-performance web infrastructure with ongoing maintenance and monitoring.",
     "longDescription": "Our Web Infrastructure & Maintenance services are designed to keep your websites and applications fast, secure, and always available. We manage cloud servers, optimize performance, apply security patches, and monitor systems 24/7. From fintech platforms to enterprise portals, we ensure stability, scalability, and uninterrupted digital operations.",
     "features": [
@@ -660,7 +676,7 @@
   {
     "id": "ecommerce-websites",
     "name": "Ecommerce Websites",
-    "imageUrl": "https://i.pinimg.com/736x/3e/ee/0e/3eee0efd67bea0921b615676c447aac5.jpg",
+    "imageUrl": "/assets/image/services/ecommerce.png",
     "description": "Custom-built ecommerce websites focused on performance, security, and conversions.",
     "longDescription": "We design and develop end-to-end ecommerce solutions that help businesses sell online with confidence. Our ecommerce websites are fast, mobile-friendly, and integrated with secure payment gateways, inventory management, and analytics tools to ensure seamless shopping experiences for customers.",
     "features": [
@@ -682,7 +698,7 @@
   {
     "id": "software-development",
     "name": "Software Development",
-    "imageUrl": "https://i.pinimg.com/736x/a6/83/15/a68315f072dd25f4c2d3410bf486b6f2.jpg",
+    "imageUrl": "/assets/image/services/software_dev.png",
     "description": "Tailor-made software applications designed to automate, scale, and optimize business processes.",
     "longDescription": "Our Software Development services deliver powerful and scalable applications built around your unique business requirements. From enterprise software to fintech applications and SaaS platforms, we use modern technologies to build secure, high-performance solutions that support long-term business growth.",
     "features": [
@@ -704,7 +720,7 @@
   {
     "id": "customised-software-development",
     "name": "Customised Software Development",
-    "imageUrl": "https://i.pinimg.com/1200x/dd/a6/c1/dda6c12e5ae75e18f30401ee54f85493.jpg",
+    "imageUrl": "/assets/image/services/software_dev.png",
     "description": "Business-specific customised software solutions designed to streamline operations, improve efficiency, and support scalable growth.",
     "longDescription": "Our Customised Software Development services focus on building solutions tailored exactly to your business needs. Whether you require fintech platforms, enterprise systems, CRM/ERP solutions, or SaaS products, we design and develop secure, scalable, and high-performance software that aligns with your workflows and long-term objectives.",
     "features": [
@@ -727,7 +743,7 @@
   {
     "id": "white-label-software-development",
     "name": "White Label Software Development",
-    "imageUrl": "https://5.imimg.com/data5/SELLER/Default/2024/5/415631185/AC/UH/ES/221288867/white-label-software.jpg",
+    "imageUrl": "/assets/image/services/white_label_software.png",
     "description": "Ready-to-launch white label software solutions that allow businesses to brand, sell, and scale products under their own identity.",
     "longDescription": "Our White Label Software Development services provide fully developed, customizable, and scalable software solutions that you can rebrand as your own. From fintech platforms and payment solutions to SaaS products and enterprise applications, we enable faster market entry with secure, compliant, and high-performance systems tailored to your business model.",
     "features": [
@@ -750,7 +766,7 @@
   {
     "id": "app-development",
     "name": "App Development",
-    "imageUrl": "https://i.pinimg.com/736x/9e/ee/7c/9eee7c583132d04530960099728977b9.jpg",
+    "imageUrl": "/assets/image/services/app_dev.png",
     "description": "Custom mobile application development services designed to deliver seamless user experiences and scalable performance.",
     "longDescription": "Our App Development services focus on building high-quality, secure, and user-friendly mobile applications tailored to your business needs. From Android and iOS apps to cross-platform solutions, we develop performance-driven applications that enhance customer engagement, streamline operations, and support long-term business growth.",
     "features": [
