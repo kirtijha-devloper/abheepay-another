@@ -177,7 +177,7 @@ const Navbar = () => {
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setServicesDropdownOpen(false);
-    }, 200);
+    }, 250);
   };
 
   return (
@@ -211,10 +211,10 @@ const Navbar = () => {
 
               {/* ✅ CHANGE #1: absolute → fixed (live clipping issue fix) */}
               <div
-                className={`fixed top-20 left-1/2 -translate-x-1/2  w-[950px] max-w-[95vw] transition-all duration-200 ease-out z-[9999] lg:block
+                className={`fixed top-20 left-1/2 -translate-x-1/2  w-[950px] max-w-[95vw] transition-all duration-300 ease-in-out z-[9999] lg:block
                   ${servicesDropdownOpen
-                    ? "opacity-100 visible translate-y-0"
-                    : "opacity-0 invisible -translate-y-2 pointer-events-none"
+                    ? "opacity-100 translate-y-0 pointer-events-auto"
+                    : "opacity-0 translate-y-4 pointer-events-none"
                   }`}
               >
                 {/* Extra padding-top to create safe hover area between link and dropdown */}
@@ -355,10 +355,13 @@ const Navbar = () => {
             <Link to="/contact" className="relative text-sm font-semibold tracking-wide hover:text-[#00D3CD]">
               CONTACT US
             </Link>
-            {/* LOGIN temporarily disabled */}
-            {/* <Link to="/login" className="relative text-sm font-semibold tracking-wide hover:text-[#00D3CD]">
+            {/* LOGIN Button */}
+            <a
+              href="https://partner.abheepay.com/backend/customer/login"
+              className="relative px-6 py-2 rounded-full text-sm font-semibold tracking-wide text-white bg-gradient-to-r from-[#00D3CD] to-[#01b5b0] hover:shadow-lg hover:shadow-[#00D3CD]/30 transition-all duration-300 hover:scale-105"
+            >
               LOGIN
-            </Link> */}
+            </a>
           </nav>
 
           <div className="flex items-center gap-2">
@@ -441,6 +444,13 @@ const Navbar = () => {
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
               CONTACT US
             </Link>
+            <a
+              href="https://partner.abheepay.com/backend/customer/login"
+              className="block text-center mt-4 px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-[#00D3CD] to-[#01b5b0] hover:shadow-lg transition-all duration-300"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              LOGIN
+            </a>
           </div>
         </div>
       </div>
